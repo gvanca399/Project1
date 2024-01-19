@@ -2,11 +2,348 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="unilab homework">
+    <meta name="keywords" content="HTMl, CSS, JavaScript, Hotel, Tbilisi, Popular place, Center ">
+    <meta name="author" content="Gvantsa Baidoshvili">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:url"                content="" />
+    <meta property="og:type"               content="Hotel Web Page" />
+    <meta property="og:title"              content="Sololaki Hills" />
+    <meta property="og:description"        content="Website For Hotel Sololaki Hills" />
+    <meta property="og:image"              content="" />
+    <link rel="stylesheet" href="./Assets/Css/Reset.css">
+    <link rel="stylesheet" href="./Assets/Css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Sololaki Hills</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+   <header>
+    <div class="container">
+        <div class="container header-flex inner-header">
+            <nav class="nav">
+                <ul class="header-flex" aria-label="Primary" role="list">
+                    <li><a class="fs-200 fw-Bold text-Accent-100" href="#facilities">Facilities</a></li>
+                    <li><a class="fs-200 fw-Bold text-Accent-100" href="#location">Location</a></li>
+                    <li><a class="fs-200 fw-Bold text-Accent-100" href="#FAQPage">FAQ</a></li>
+                    <!-- <li><a class="fs-200 fw-Bold text-Accent-100" href="#">Rate</a></li> -->
+                    <li><a class="fs-200 fw-Bold text-Accent-100" href="#Contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+   </header>
+   <main>
+       <!-- First Section "Find your perfect place..., comments" -->
+       <section class="mainSection container">
+           <div class="flex">
+                <!-- Info div -->
+                <div class="left-side">
+                    <div class="leftSide-Place">
+                        <h1 class="text-Accent-100 fw-SemiBold fs-600">Find your perfect place to stay</h1>
+                    </div>
+                    <div class="facilities">
+                        <div class="card">
+                            <p class="facilitiesText text-Accent-200 fw-Regular fs-300 ">We do our best facilities provide you</p>
+                            <div class="blob"></div>
+                            <div class="fakeblob"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image div -->
+                <div class="right-side">
+                    <img src="./Assets/IMG/Main Img.jpg" alt="Photo Of Appartment">
+                </div>
+            </div>
+            <!-- Comments div -->
+            <div class="mini-comments">
+                <div class="comment-info">
+                    <h5 class="fw-Bold fs-200 margin-Left">David</h3>
+                    <div class="flex">
+                        <p class="fw-SemiBold fs-100 margin-Right-comment">Russia</p>
+                        <div class="flex">
+                            <!-- Star Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7944 7.0335L9 1.125L7.20563 7.0335H1.125L6.04463 10.8585L4.21875 16.875L9 13.1569L13.7812 16.875L11.9554 10.8585L16.875 7.0335H10.7944Z" fill="#24AB70"/>
+                                </svg>
+                            <p class="fw-Bold fs-200 text-Accent-300 rating">5.0</p>
+                            <p class="fw-SemiBold fs-100">Rating</p>
+                        </div>
+                    </div>
+                    <p class="fw-Regular fs-100">“Good apartment with everything you need, well suited for a family with a child. Not far from the funicular.”</p>
+                </div>
+            </div>
+            <div class="david-commnet-avatar">
+                <img src="./Assets/IMG/avatar.png" alt="Comment avatar">
+            </div>
+            <!-- Second comment -->
+            <div class="mini-comments-v2">
+                <div class="comment-info-v2">
+                    <h5 class="fw-Bold fs-200 margin-Left">Piotr</h3>
+                    <div class="flex">
+                        <p class="fw-SemiBold fs-100 margin-Right-comment">Poland</p>
+                        <div class="flex">
+                            <!-- Star Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7944 7.0335L9 1.125L7.20563 7.0335H1.125L6.04463 10.8585L4.21875 16.875L9 13.1569L13.7812 16.875L11.9554 10.8585L16.875 7.0335H10.7944Z" fill="#24AB70"/>
+                            </svg>
+                            <p class="fw-Bold fs-200 text-Accent-300 rating">4.9</p>
+                            <p class="fw-SemiBold fs-100">Rating</p>
+                        </div>
+                    </div>
+                    <p class="fw-Regular fs-100">“great location! Fully equipped apartment. I recommend!”</p>
+                </div>
+            </div>
+            <div class="commnet-avatar">
+                <img src="./Assets/IMG/avatar.png" alt="Comment avatar">
+            </div>
+       </section>
+       <!-- Facilities start here -->
+
+       <section class="container">
+        <div class="split facilitiesContainer">
+            <div class="facilitiesBox card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_4029_183)">
+                      <path d="M19.9219 36.4453C21.3457 36.4453 22.5 35.291 22.5 33.8672C22.5 32.4433 21.3457 31.2891 19.9219 31.2891C18.498 31.2891 17.3438 32.4433 17.3438 33.8672C17.3438 35.291 18.498 36.4453 19.9219 36.4453Z" fill="#24AB70"/>
+                      <path d="M39.5805 12.0987C34.4454 6.58913 27.4917 3.55477 19.9997 3.55469C12.5083 3.55477 5.55465 6.58913 0.419429 12.0987C-0.168851 12.73 -0.134086 13.7187 0.497163 14.3071C1.12849 14.8954 2.11716 14.8607 2.70552 14.2294C7.24301 9.36093 13.3849 6.67976 20.0003 6.67968C26.6151 6.67976 32.7569 9.36093 37.2944 14.2294C37.6022 14.5595 38.0194 14.7265 38.4378 14.7265C38.8193 14.7265 39.2017 14.5876 39.5028 14.3071C40.134 13.7187 40.1689 12.73 39.5805 12.0987Z" fill="#24AB70"/>
+                      <path d="M33.8434 18.5514C30.0475 14.7269 25.1312 12.6207 20 12.6208C14.8676 12.6209 9.95117 14.7272 6.15649 18.5515C5.54867 19.1641 5.5525 20.1534 6.16508 20.7612C6.77766 21.369 7.76695 21.3652 8.37476 20.7526C11.5783 17.524 15.7069 15.7459 20 15.7458C24.292 15.7457 28.4206 17.5239 31.6253 20.7528C31.9307 21.0605 32.3325 21.2146 32.7343 21.2146C33.1321 21.2146 33.5303 21.0635 33.8351 20.7611C34.4475 20.1532 34.4513 19.1639 33.8434 18.5514Z" fill="#24AB70"/>
+                      <path d="M27.5899 25.0228C25.557 23.0088 22.6432 21.7578 19.9852 21.7578C19.9849 21.7578 19.9844 21.7578 19.9841 21.7578H19.8715C19.871 21.7578 19.8708 21.7578 19.8703 21.7578C17.2123 21.7578 14.2982 23.0089 12.2655 25.0228C11.6525 25.6301 11.6479 26.6194 12.2553 27.2325C12.5608 27.5408 12.963 27.6953 13.3653 27.6953C13.7627 27.6953 14.1603 27.5446 14.4649 27.2428C15.912 25.8091 18.0336 24.8828 19.8705 24.8828C19.8707 24.8828 19.871 24.8828 19.8713 24.8828H19.9843C19.9846 24.8828 19.9847 24.8828 19.985 24.8828C21.8217 24.8828 23.9434 25.8091 25.3904 27.2428C26.0034 27.8501 26.9928 27.8457 27.6001 27.2325C28.2075 26.6195 28.2029 25.6301 27.5899 25.0228Z" fill="#24AB70"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4029_183">
+                        <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                    </svg>
+                    <P>Free Wifi</P>
+
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+            <div class="facilitiesBox card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M21.1272 7.67151H16.4805C15.8236 7.67151 15.3086 8.20885 15.3086 8.84338V25.5317C15.3086 26.1789 15.8333 26.7035 16.4805 26.7035C17.1277 26.7035 17.6523 26.1789 17.6523 25.5317V19.4483C18.7398 19.4422 20.3313 19.4342 21.1273 19.4342C22.698 19.4342 24.1873 18.8263 25.3209 17.7225C26.4687 16.605 27.1008 15.1242 27.1008 13.5528C27.1008 11.9815 26.4687 10.5006 25.3209 9.38307C24.1873 8.2794 22.698 7.67151 21.1272 7.67151ZM21.1272 17.0904C20.3359 17.0904 18.767 17.0983 17.678 17.1044C17.6581 13.4546 17.6695 14.6819 17.6559 10.0153H21.1272C23.0948 10.0153 24.757 11.6353 24.757 13.5528C24.757 15.4704 23.0948 17.0904 21.1272 17.0904Z" fill="#24AB70"/>
+                        <path d="M32.1532 5.03406C28.907 1.78781 24.5907 0 19.9997 0C15.4087 0 11.0925 1.78781 7.84628 5.03406C-1.59082 14.4712 2.89144 30.739 15.9372 33.8911V38.0469C15.9372 39.1238 16.8134 40 17.8903 40H22.1091C23.186 40 24.0622 39.1238 24.0622 38.0469V33.8911C37.1206 30.7359 41.5837 14.4645 32.1532 5.03406ZM21.7185 37.6562H18.281V34.2899C19.4208 34.403 20.5786 34.403 21.7185 34.2899V37.6562ZM22.68 31.7902C13.6447 33.4389 5.15597 26.5484 5.15597 17.1875C5.15597 9.00266 11.8148 2.34375 19.9997 2.34375C28.1846 2.34375 34.8435 9.00266 34.8435 17.1875C34.8435 24.3529 29.7406 30.5017 22.68 31.7902Z" fill="#24AB70"/>
+                      </svg>
+                      <P>Parking Area</P>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+            <div class="facilitiesBox card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_4029_199)">
+                      <path d="M11.2781 39.8789C11.7703 40.122 12.3682 39.9913 12.7131 39.5587L31.4631 16.043C31.7438 15.6911 31.798 15.2095 31.6027 14.804C31.4074 14.3984 30.997 14.1406 30.5469 14.1406H23.0634L29.2525 1.69367C29.4331 1.33039 29.4131 0.899531 29.1993 0.554688C28.9857 0.209844 28.6088 0 28.2031 0H14.1406C13.6024 0 13.1335 0.366563 13.0035 0.88875L8.31596 19.7169C8.22885 20.0669 8.30775 20.4375 8.52978 20.7216C8.75189 21.0059 9.09252 21.1719 9.45314 21.1719H14.985L10.6598 38.545C10.5266 39.0798 10.784 39.635 11.2781 39.8789ZM17.6216 20.2831C17.7087 19.9331 17.6298 19.5625 17.4078 19.2784C17.1856 18.9941 16.845 18.8281 16.4844 18.8281H10.9525L15.0565 2.34375H26.3116L20.1224 14.7907C19.9418 15.154 19.9619 15.5848 20.1756 15.9297C20.3892 16.2746 20.7662 16.4844 21.1718 16.4844H28.1136L14.2331 33.8928L17.6216 20.2831Z" fill="#24AB70"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4029_199">
+                        <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <P>Free Electricity</P>
+                  <div class="blob"></div>
+                  <div class="fakeblob"></div>
+            </div>
+            <div class="facilitiesBox airport card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 128"><path d="M108.42 55.84H44.26a9 9 0 0 0-8.94 8.94v20.67H19.58a9 9 0 0 0-8.93 8.94v14.8a9 9 0 0 0 8.93 8.94h6.47c2.2 7.332 9.928 11.491 17.26 9.291a13.861 13.861 0 0 0 9.29-9.291h22.8c2.2 7.332 9.928 11.491 17.26 9.291a13.861 13.861 0 0 0 9.29-9.291h1.53c7.658-.006 13.864-6.212 13.87-13.87V64.78a9 9 0 0 0-8.93-8.94zm.93 8.94v20.67H92.68V63.84h15.74a.94.94 0 0 1 .93.94zM68 85.45V63.84h16.68v21.61zM44.26 63.84H60v21.61H43.32V64.78c0-.52.42-.94.94-.94zM39.32 120a5.87 5.87 0 1 1 5.87-5.87 5.88 5.88 0 0 1-5.87 5.87zm49.36 0a5.87 5.87 0 1 1 5.87-5.87 5.87 5.87 0 0 1-5.87 5.87zm14.8-9.87H102c-2.2-7.332-9.928-11.491-17.26-9.291a13.861 13.861 0 0 0-9.29 9.291H52.6c-2.2-7.332-9.928-11.491-17.26-9.291a13.861 13.861 0 0 0-9.29 9.291h-6.47a.94.94 0 0 1-.93-.94v-14.8a.94.94 0 0 1 .93-.94h89.77v10.81a5.87 5.87 0 0 1-5.87 5.87zm-92.29-82a4 4 0 0 1 5.467-1.451l.003.001 6.69 3.88 12.33-6-13.79-8a4 4 0 0 1 4-6.91l18.4 10.73 13.07-6.4a4.003 4.003 0 1 1 3.52 7.19l-36 17.6a4 4 0 0 1-3.76-.13l-8.54-5a4 4 0 0 1-1.39-5.52z"></path></svg>
+                <p>Airport shuttle</p>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+            <div class="facilitiesBox terrace card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.768 11.413l1.5 6.75a.75.75 0 0 0 1.464-.326l-1.5-6.75a.75.75 0 0 0-1.464.326zM2.22 23.456l1.5-5.25L3 18.75h3a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 0 1.5 0V19.5A2.25 2.25 0 0 0 6 17.25H3a.75.75 0 0 0-.721.544l-1.5 5.25a.75.75 0 1 0 1.442.412zm19.547-12.369l-1.5 6.75a.75.75 0 1 0 1.464.326l1.5-6.75a.75.75 0 1 0-1.464-.326zm1.453 11.957l-1.5-5.25A.75.75 0 0 0 21 17.25h-3a2.25 2.25 0 0 0-2.25 2.25v3.75a.75.75 0 0 0 1.5 0V19.5a.75.75 0 0 1 .75-.75h3l-.721-.544 1.5 5.25a.75.75 0 1 0 1.442-.412zM11.25 6.75v16.5a.75.75 0 0 0 1.5 0V6.75a.75.75 0 0 0-1.5 0zm-4.5 7.5h10.5a.75.75 0 0 0 0-1.5H6.75a.75.75 0 0 0 0 1.5zM1.5 6l10.064-4.37c.297-.161.575-.161.803-.033l10.178 4.425L22.5 6H1.5zm0 1.5h21a1.5 1.5 0 0 0 .689-2.832L13.034.255c-.616-.35-1.452-.35-2.136.034L.858 4.646c-.544.28-.856.792-.857 1.352A1.5 1.5 0 0 0 1.499 7.5z"></path>
+                </svg>
+                <p>Terrace</p>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+            <div class="facilitiesBox Heating card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.35.22a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 0 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183A.75.75 0 0 0 9.35.22zm4.007 0a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 1 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183.75.75 0 0 0-1.06-1.06zm4.007 0a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 1 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183.75.75 0 0 0-1.06-1.06zM19.5 18.75v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm-6 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm3 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm-6 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zM4.125 9a.375.375 0 1 1 .75 0 .375.375 0 0 1-.75 0 .75.75 0 0 0 1.5 0 1.125 1.125 0 1 0-2.25 0 1.125 1.125 0 0 0 2.25 0 .75.75 0 0 0-1.5 0zm0 4.5a.375.375 0 1 1 .75 0 .375.375 0 0 1-.75 0 .75.75 0 0 0 1.5 0 1.125 1.125 0 1 0-2.25 0 1.125 1.125 0 0 0 2.25 0 .75.75 0 0 0-1.5 0zM3 21.75v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zm16.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zM5.25 4.5h-3A2.25 2.25 0 0 0 0 6.75v13.5a2.25 2.25 0 0 0 2.25 2.25h19.5A2.25 2.25 0 0 0 24 20.25V6.75a2.25 2.25 0 0 0-2.25-2.25.75.75 0 0 0 0 1.5.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H2.25a.75.75 0 0 1-.75-.75V6.75A.75.75 0 0 1 2.25 6h3a.75.75 0 0 0 0-1.5z"></path>
+                </svg>
+                <p>Heating</p>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+        </div>
+       </section>
+       <div class="galleryRight">
+        <!-- <h1 class="fw-Bold fs-500">In  <span>The</span><span>Centre</span><span>Of</span><span>Tbilisi</span></h1> -->
+        <div class="cityIMG">
+            <section class="hidden">
+                <p class=" fw-SemiBold fs-500">In The Centre Of Tbilisi</p>
+            </section>
+            <section class="hidden">
+                <p class="  fw-SemiBold fs-400">Classic Tbilisi courtyard, with local flavor</p>
+            </section>
+            <section class="hidden">
+                <p class=" fw-Regular fs-300">Nearby there is everything you need <!--  Metro, attractions, exchange offices, inexpensive shops, cafes... --></p>
+            </section>
+        </div>
+    </div>
+       <!-- Gallery Section -->
+
+       <section class="container gridGallery" id="facilities">
+        <div class="galleryFacilities">
+            <p class="fw-SemiBold fs-400">Most Popular Facilities</p>
+        </div>
+        <div class="gallery">
+
+            <div class="galleryBox">
+                <img src="./Assets/IMG/134649166.jpg" alt="">
+                <div class="insidebox">
+                    <p>Cleaning products</p>
+                    <p>Washing machine</p>
+                    <p>Microwave</p>
+                    <p>Refrigerator</p>
+                    <p>Coffee machine</p>
+                    <p>Electric kettle</p>
+                    
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Kitchen Facilities</h5>
+                </div>
+            </div>
+            <div class="galleryBox">
+                <img src="./Assets/IMG/134649173.jpg" alt="">
+                <div class="insidebox">
+                    <p>Linen</p>
+                    <p>Wardrobe</p>
+                    <p>Extra long bed</p>
+                    <p>2 Pillow</p>
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Bedroom Facilities</h5>
+                </div>
+            </div>
+            <div class="galleryBox">
+                <img src="/Assets/IMG/134649202.jpg" alt="">
+                <div class="insidebox">
+                    <p>Dining area</p>
+                    <p>Sofa</p>
+                    <p>Seating Area</p>
+                    <p>Desk</p>
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Living Area Facilities</h5>
+                </div>
+            </div>
+            <div class="galleryBox">
+                <img src="/Assets/IMG/134649221.jpg" alt="">
+                <div class="insidebox">
+                    <p>Drying rack for clothing</p>
+                    <p>Fold-up bed</p>
+                    <p>Clothes rack</p>
+                    <p>Electric blankets</p>
+                    <p>Soundproofing</p>
+                    <p>Private entrance</p>
+                    <p>Ironing facilities</p>
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Room Amenities Facilities</h5>
+                </div>
+            </div>
+            <div class="galleryBox">
+                <img src="/Assets/IMG/134649190.jpg" alt="">
+                <div class="insidebox">
+                    <p>shower</p>
+                    <p>Toilet</p>
+                    <p>Towels/sheets </p>
+                    <p>Toilet paper</p>
+                    <p>Slippers</p>
+                    <p>Free toiletries</p>
+                    <p>Hairdryer</p>
+                    <p>Towels</p>
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Bathroom Facilities</h5>
+                </div>
+            </div>
+            <div class="galleryBox">
+                <img src="/Assets/IMG/134649211.jpg" alt="">
+                <div class="insidebox">
+                    <p>Flat-screen TV</p>
+                    <p>Laptop</p>
+                    <p>Cable channels</p>
+                    <p>Satellite channels</p>
+                    <p>CD player</p>
+                    <p>Radio</p>
+                    <p>Telephone</p>
+                    <p>Pay-per-view channels</p>
+                </div>
+                <div class="name-place">
+                    <h5 class="text-Accent-200 fw-SemiBold fs-300">Media & Technology Facilities</h5>
+                </div>
+            </div>
+            <!-- <div class="galleryBox"><img src="/Assets/IMG/237481170.jpg" alt=""></div> -->
+        </div>
+       </section>
+       <section class="container" id="location">
+        <div class="galleryFacilities">
+            <p class="fw-SemiBold fs-400">Location</p>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2882.3292666139505!2d44.796315375798436!3d41.69219812703361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40440cefafde5811%3A0xfc8770ef49bc089d!2sFreedom%20Square%2C%20Tbilisi!3m2!1d41.6933656!2d44.801528999999995!4m5!1s0x40440cedb2615555%3A0xba2bf46053eb4afc!2z4YOh4YOd4YOa4YOd4YOa4YOQ4YOZ4YOY4YOhIOGDkOGDpuGDm-GDkOGDoOGDl-GDmCwgNiwgVGJpbGlzaSBEYW5pZWwgQ2hvbnFhZHplIFN0LCBUYmlsaXNp!3m2!1d41.6911957!2d44.7958169!5e1!3m2!1sen!2sge!4v1702237475570!5m2!1sen!2sge" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+        </section>
+        <section class="container" id="FAQPage">
+            <div class="accordion">
+                <h1>Frequently Asked Questions</h1>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion1">
+                    <label for="accordion1" class="accordion-item-title"><span class="icon"></span>How much does it cost to stay at Sololaki Hill?</label>
+                    <div class="accordion-item-desc">The prices at Sololaki Hill may vary depending on your stay (e.g. dates you select, hotel's policy etc.). See the prices by entering your dates.</div>
+                </div>
+            
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion2">
+                    <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How many bedrooms does Sololaki Hill have?</label>
+                    <div class="accordion-item-desc">1 bedroom</div>
+                </div>
+            
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion3">
+                    <label for="accordion3" class="accordion-item-title"><span class="icon"></span>How far is Sololaki Hill from the centre of Tbilisi City?</label>
+                    <div class="accordion-item-desc">Sololaki Hill is 550 m from the centre of Tbilisi City. All distances are measured in straight lines. Actual travel distances may vary.</div>
+                </div>
+            
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion4">
+                    <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How many guests can sleep at Sololaki Hill?</label>
+                    <div class="accordion-item-desc">4 guests.</div>
+                </div>
+            
+            </div>
+        </section>
+        <!-- <section class="container" id="Rate">
+            მოგვიანებით ჩავამატებ
+        </section> -->
+    </main>
+<footer class="new_footer_area bg_color" id="Contact">
+        <div class="footer-info">
+            <div class="right-side">
+                <div class="location">
+                    <h5>Where to find us</h5>
+                    <ul>
+                        <li>Daniel Chonqadze 6/6</li>
+                    </ul>
+                </div>
+                <div class="Contact">
+                    <h5>Contact us</h5>
+                    <ul>
+                        <li>+995 551 99 33 99 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="new_footer_top">
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
