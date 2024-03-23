@@ -422,7 +422,60 @@ svg{
     grid-template-columns:1fr 1fr 1fr ;
     gap: 10px;
     padding-right: 10px;
+} 
+
+
+
+
+
+.slidebarGallery{
+    width: 80;
+    display: flex;
+    overflow-x: scroll;
 }
+.slidebarGallery div{
+    width:100%;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 15px;
+    padding: 10px;
+    flex:none;
+}
+.slidebarGallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.slidebarGallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-Wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backBtn, #nextBtn {
+    width: 5%;
+    cursor: pointer;
+}
+.slidebarGallery div img:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .galleryRight{
