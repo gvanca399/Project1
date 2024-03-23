@@ -460,7 +460,7 @@ svg{
 }
 .slidebarGallery div img:hover{
     cursor: pointer;
-    transform: scale(1.08);
+    transform: scale(1.05);
     filter: grayscale(0);
 }
 
